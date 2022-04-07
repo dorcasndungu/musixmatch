@@ -1,6 +1,6 @@
 # Rhyme
 
-This is an android app that helps songwriters experiencing writer's block by providing them with a variety of song lyrics and a notepad in which they are supposed to create different phrases for the provided lyrics. 
+This is an android app that helps songwriters experiencing writer's block by providing them with a variety of song lyrics and a notepad in which they are supposed to create different phrases for the provided lyrics and save them. 
 
 ## Install
 Download the app using this link:
