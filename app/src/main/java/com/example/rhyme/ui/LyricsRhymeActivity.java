@@ -30,26 +30,26 @@ public class LyricsRhymeActivity extends AppCompatActivity {
         String trackName = intent.getStringExtra("trackName");
 
 
-        tracksApi client = tracksClient.getClient();
-        Call<lyricResponse> call = client.getLyrics_body(trackName,singerName);
-        call.enqueue(new Callback<lyricResponse>() {
-            @Override
-            public void onResponse(Call<lyricResponse> call, Response<lyricResponse> response) {
-                if (response.isSuccessful()) {
-                    assert response.body() != null;
-                    String lyrics= response.body().getLyrics().getLyricsBody();
-                    mLyricsText.setText(lyrics);
-                }
-            }
-
-            @Override
-            public void onFailure(Call<lyricResponse> call, Throwable t) {
-                Log.e("Error Message", "onFailure: ",t );
-            }
-
-
-
-        });
+//        tracksApi client = tracksClient.getClient();
+//        Call<lyricResponse> call = client.getLyrics_body(trackName,singerName);
+//        call.enqueue(new Callback<lyricResponse>() {
+//            @Override
+//            public void onResponse(Call<lyricResponse> call, Response<lyricResponse> response) {
+//                if (response.isSuccessful()) {
+//                    assert response.body() != null;
+//                    String lyrics= response.body().getLyrics().getLyricsBody();
+//                    mLyricsText.setText(lyrics);
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<lyricResponse> call, Throwable t) {
+//                Log.e("Error Message", "onFailure: ",t );
+//            }
+//
+//
+//
+//        });
     }
 
 }

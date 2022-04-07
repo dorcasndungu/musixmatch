@@ -33,26 +33,26 @@ public class LyricsActivity extends AppCompatActivity {
         String trackName = intent.getStringExtra("trackName");
 
 
-        tracksApi client = tracksClient.getClient();
-        Call<Lyrics> call = client.getTopTracks();
-        call.enqueue(new Callback<Lyrics>() {
-            @Override
-            public void onResponse(Call<Lyrics> call, Response<Lyrics> response) {
-                if (response.isSuccessful()) {
-                    assert response.body() != null;
-                    String lyrics= response.body().getLyricsBody();
-                    mLyricsText.setText(lyrics);
-                }
-            }
-
-            @Override
-            public void onFailure(Call<Lyrics> call, Throwable t) {
-                Log.e("Error Message", "onFailure: ",t );
-            }
-
-
-
-        });
+//        tracksApi client = tracksClient.getClient();
+//        Call<Lyrics> call = client.getTopTracks();
+//        call.enqueue(new Callback<Lyrics>() {
+//            @Override
+//            public void onResponse(Call<Lyrics> call, Response<Lyrics> response) {
+//                if (response.isSuccessful()) {
+//                    assert response.body() != null;
+//                    String lyrics= response.body().getLyricsBody();
+//                    mLyricsText.setText(lyrics);
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(Call<Lyrics> call, Throwable t) {
+//                Log.e("Error Message", "onFailure: ",t );
+//            }
+//
+//
+//
+//        });
     }
 
 }

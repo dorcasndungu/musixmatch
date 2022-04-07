@@ -2,11 +2,11 @@
 package com.example.rhyme.models;
 
 import java.util.List;
-import javax.annotation.Generated;
+
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-@Generated("jsonschema2pojo")
+
 public class PrimaryGenres {
 
     @SerializedName("music_genre_list")
